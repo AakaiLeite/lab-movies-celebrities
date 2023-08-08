@@ -1,5 +1,15 @@
 <h2>Movies List</h2>
-{{#each movies}}
-    <p>Title: <a href="/movies/{{_id}}">{{title}}</a></p>
-{{/each}}
-<p><a href="/">Home</a></p>
+<nav>
+  <p><a href="/">Home</a></p>
+  <p><a href="/celebrities/create">Create a Celebrity!</a></p>
+  <p><a href="/celebrities">View all Celebrities</a></p>
+  <p><a href="/movies/create">Create a Movie</a></p>
+  <p><a href="/movies">View all Movies</a></p>
+</nav>
+<div class="movies-background-div">
+  {{#each movies}}
+    <div class="movie-div">
+      <p><a href="/movies/{{_id}}">{{title}}</a></p>
+    </div>
+  {{/each}}
+</div>

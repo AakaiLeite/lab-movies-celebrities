@@ -1,18 +1,26 @@
 <h2>Movie Details:</h2>
-<p>Title: <span>{{movie.title}}</span></p>
-<p>Genre: <span>{{movie.genre}}</span></p>
-<p>Plot: <span>{{movie.plot}}</span></p>
-<p>Cast:
-  {{#each movie.cast}}
-    <p>Name: <span>{{name}}</span></p>
-    <p>Occupation: <span>{{occupation}}</span></p>
-    <p>Catch Phrase: <span>{{catchPhrase}}</span></p>
-  {{/each}}
-</p>
-<form action="/movies/{{movie._id}}/edit" method="GET">
-  <button>Edit</button>
-</form>
-<form action="/movies/{{movie._id}}/delete" method="POST">
-  <button>Delete</button>
-</form>
-<p><a href="/">Home</a></p>
+<nav>
+  <p><a href="/">Home</a></p>
+  <p><a href="/celebrities/create">Create a Celebrity!</a></p>
+  <p><a href="/celebrities">View all Celebrities</a></p>
+  <p><a href="/movies/create">Create a Movie</a></p>
+  <p><a href="/movies">View all Movies</a></p>
+</nav>
+<div class="list-element-div">
+  <p>Title: <span>{{movie.title}}</span></p>
+  <p>Genre: <span>{{movie.genre}}</span></p>
+  <p>Plot: <span>{{movie.plot}}</span></p>
+  <p>Cast:
+    {{#each movie.cast}}
+      <p>Name: <span>{{name}}</span></p>
+      <p>Occupation: <span>{{occupation}}</span></p>
+      <p>Catch Phrase: <span>{{catchPhrase}}</span></p>
+    {{/each}}
+  </p>
+  <form action="/movies/{{movie._id}}/edit" method="GET">
+    <button>Edit</button>
+  </form>
+  <form action="/movies/{{movie._id}}/delete" method="POST">
+    <button>Delete</button>
+  </form>
+</div>

@@ -1,5 +1,15 @@
 <h2>Celebrities List</h2>
+ <nav>
+    <p><a href="/">Home</a></p>
+    <p><a href="/celebrities/create">Create a Celebrity!</a></p>
+    <p><a href="/celebrities">View all Celebrities</a></p>
+    <p><a href="/movies/create">Create a Movie</a></p>
+    <p><a href="/movies">View all Movies</a></p>
+  </nav>
+  <div class="list-element-div">
 {{#each celebrity}}
-    <p>Name: <span>{{name}}</span></p>
+<div class="celebrity-div">
+    <p><span>{{name}}</span></p>
+</div>
 {{/each}}
-<a href="/">Home</a>
+  </div>

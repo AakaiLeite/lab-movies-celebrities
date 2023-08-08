@@ -47,9 +47,9 @@ router.get("/movies/:id", async (req, res) => {
 router.get("/movies/:id/edit", async (req, res) => {
   try {
     const { id } = req.params;
-    let movie = await Movie.findById(id);
+    let movie = await Movie.findById(id).populate("cast");
     let celebrities = await Celebrity.find();
-    res.render("movies/edit-movie",{ movie, celebrities });
+    res.render("movies/edit-movie", { movie: movie, celebrity: celebrities });
   } catch (error) {
     console.log("Error Updating Movie: ", error);
   }

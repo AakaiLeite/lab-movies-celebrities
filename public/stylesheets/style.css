@@ -1,8 +1,109 @@
 body {
-  padding: 50px;
+  min-width: 100vw;
+  min-height: 100%;
+  margin: 0px;
+  padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00b7ff;
+h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Index Page CSS */
+
+.index-header {
+  vertical-align: middle;
+  text-align: center;
+  background-color: #00b7ff;
+  box-shadow: 5px 5px 5px rgb(255, 255, 255);
+  height: 80px;
+  color: white;
+}
+
+.index-header h2 {
+  margin:10px;
+}
+
+.index-background-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100%;
+  background-image: url("/images/yellow-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.index-links-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.index-links-div a {
+  background-color: #00b7ff;
+  box-shadow: 5px 5px 5px rgb(191, 191, 191);
+  color: white;
+  text-decoration: none;
+  margin: 40px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Create Page CSS */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height:60px;
+  width: 100%;
+  background-color:#00b7ff;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+form {
+  margin: 30px;
+}
+
+.list-element-div {
+  margin: 30px;
+}
+
+/* Movie List Page CSS */
+
+.movies-background-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+.movie-div {
+  border-style: dotted;
+  border-radius: 10px;
+  margin:10px;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+/* Celebrities List Page CSS */
+
+.celebrity-div {
+  border-style: dotted;
+  border-radius: 10px;
+  margin:10px;
+  padding: 10px;
+  text-align: center;
+  width: 100px;
 }
